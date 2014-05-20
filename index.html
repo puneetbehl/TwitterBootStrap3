@@ -1,16 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--To ensure proper rendering and touch zooming,-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/bootstrap-theme.css"/>
-    <link rel="stylesheet" href="css/normalize.css"/>
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Puneet Behl - Resume</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script src="js/Chart.js"></script>
+
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#nav">
+<div id="section-topbar">
+    <div id="topbar-inner">
+        <div class="container">
+            <div class="row">
+                <div class="dropdown">
+                    <ul id="nav" class="nav">
+                        <li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="fa fa-user"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="fa fa-file"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="fa fa-briefcase"></i></a></li>
+                        <li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="fa fa-envelope"></i></a></li>
+                    </ul><!--/ uL#nav -->
+                </div><!-- /.dropdown -->
+                <div class="clear"></div>
+            </div><!--/.row -->
+        </div><!--/.container -->
+        <div class="clear"></div>
+    </div><!--/ #topbar-inner -->
+</div><!--/ #section-topbar -->
+
+<section id="about" name="about"></section>
+<div id="headerwrap">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-12">
+                <h1>Puneet Behl</h1>
+                <h3>Software Engineer | puneetbehl@yahoo.com</h3>
+            </div><!--/.col-lg-12 -->
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/.#headerwrap -->
+
+<div id="intro">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <img src="img/profile/me.jpg" alt="" class="profile-photo img-circle"/>
+            </div>
+            <div class="col-lg-6">
+                <p>I'm software engineer with 2 years of professional experience and well versed with Agile development practices, XP programming methodologies. I'm interested in all kinds of software development communication, but my major focus is on web, mobile & tablet application development. I also have skills in other fields like web designing.</p>
+            </div>
+            <div class="col-lg-3">
+                <p><a href="#"><i class="fa fa-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+            </div>
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/ #intro -->
+
+<section id="resume" name="resume"></section>
+<!--EDUCATION DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>EDUCATION</h5>
+        </div>
+        <div class="col-lg-6">
+            <p><t>Bachelor of Technology, Information Technology</t><br/>
+                Maharishi Dayanand University <br/>
+                <i>4 Years Degree</i>
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>GRADUATED IN JULY 2012</sm><br/>
+                <!--<imp><sm>IN PROGRESS</sm></imp>-->
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><t>Oracle Certifier Java Programmer Standard Edition 6</t><br/>
+                IZO-851 <br/>
+                <i>95%</i>
+            </p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>JUNE 2012</sm></p>
+        </div>
+
+    </div><!--/.row -->
+    <br>
+    <hr>
+</div><!--/.container -->
+
+
+<!--WORK DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>WORK</h5>
+        </div>
+        <div class="col-lg-6">
+            <p><t>Software Engineer</t><br/>
+                IntelliGrape Software Ltd. <br/>
+            </p>
+            <p><more>IntelliGrape is expert in building tailor-made applications that is focussed towards helping our client's business grow and rise.</more></p>
+        </div>
+        <div class="col-lg-3">
+            <p><sm>AUGUST 2012 - CURRENT</sm></p>
+        </div>
+
+    </div><!--/.row -->
+    <br>
+    <hr>
+</div><!--/.container -->
+
+<!--SKILLS DESCRIPTION -->
+<div id="skillswrap">
+<div class="container">
+<div class="row">
+<div class="col-lg-2 col-lg-offset-1">
+    <h5>SKILLS</h5>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="javascript" height="130" width="130"></canvas>
+    <p>Javascript</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 20,
+                color:"#1abc9c"
+            },
+            {
+                value : 80,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="angular" height="130" width="130"></canvas>
+    <p>Angular JS</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 30,
+                color:"#1abc9c"
+            },
+            {
+                value : 70,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("angular").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="jquery" height="130" width="130"></canvas>
+    <p>JQuery</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 10,
+                color:"#1abc9c"
+            },
+            {
+                value : 90,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 col-lg-offset-3 centered">
+    <canvas id="jquery-mobile" height="130" width="130"></canvas>
+    <p>JQuery Mobile</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 25,
+                color:"#1abc9c"
+            },
+            {
+                value : 75,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("jquery-mobile").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="bootstrap" height="130" width="130"></canvas>
+    <p>Twitter Bootstrap</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 5,
+                color:"#1abc9c"
+            },
+            {
+                value : 95,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="wordpress" height="130" width="130"></canvas>
+    <p>Wordpress</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 70,
+                color:"#1abc9c"
+            },
+            {
+                value : 30,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+
+<div class="col-lg-3 col-lg-offset-3 centered">
+    <canvas id="html" height="130" width="130"></canvas>
+    <p>HTML/CSS</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 20,
+                color:"#1abc9c"
+            },
+            {
+                value : 80,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="mysql" height="130" width="130"></canvas>
+    <p>MySQL</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 30,
+                color:"#1abc9c"
+            },
+            {
+                value : 70,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("mysql").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="mongodb" height="130" width="130"></canvas>
+    <p>MongoDB</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 40,
+                color:"#1abc9c"
+            },
+            {
+                value : 60,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("mongodb").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 col-lg-offset-3 centered">
+    <canvas id="java" height="130" width="130"></canvas>
+    <p>Java</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 30,
+                color:"#1abc9c"
+            },
+            {
+                value : 70,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="groovy-grails" height="130" width="130"></canvas>
+    <p>Groovy & Grails</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 20,
+                color:"#1abc9c"
+            },
+            {
+                value : 80,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("groovy-grails").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="linux" height="130" width="130"></canvas>
+    <p>Linux</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 20,
+                color:"#1abc9c"
+            },
+            {
+                value : 80,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("linux").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 col-lg-offset-3 centered">
+    <canvas id="version-control" height="130" width="130"></canvas>
+    <p>Version Control(Git, SVN)</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 25,
+                color:"#1abc9c"
+            },
+            {
+                value : 75,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("version-control").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="spring" height="130" width="130"></canvas>
+    <p>Spring</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 40,
+                color:"#1abc9c"
+            },
+            {
+                value : 60,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("spring").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="akka" height="130" width="130"></canvas>
+    <p>Akka</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 30,
+                color:"#1abc9c"
+            },
+            {
+                value : 70,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("akka").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 col-lg-offset-3 centered">
+    <canvas id="geb" height="130" width="130"></canvas>
+    <p>Geb</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 40,
+                color:"#1abc9c"
+            },
+            {
+                value : 60,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("geb").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+<div class="col-lg-3 centered">
+    <canvas id="spock" height="130" width="130"></canvas>
+    <p>Unit & Integration Testing (Grails Spock)</p>
+    <br>
+    <script>
+        var doughnutData = [
+            {
+                value: 20,
+                color:"#1abc9c"
+            },
+            {
+                value : 80,
+                color : "#ecf0f1"
+            }
+        ];
+        var myDoughnut = new Chart(document.getElementById("spock").getContext("2d")).Doughnut(doughnutData);
+    </script>
+</div>
+</div><!--/.row -->
+<br>
+</div><!--/.container -->
+</div><!--/ #skillswrap -->
+<section id="work" name="work"></section>
+<!--PORTFOLIO DESCRIPTION -->
+<div class="container desc">
+    <div class="row">
+        <div class="col-lg-2 col-lg-offset-1">
+            <h5>PORTFOLIO</h5>
+        </div>
+
+        <!--SIMPLE INTERACT -->
+        <div class="col-lg-6">
+            <p><img class="img-responsive" src="img/simple-interact.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+            <p>Simple Interact</p>
+            <p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
+                <sm><i class="fa fa-tag"></i> complete</sm></more>
+            </p>
+        </div>
+
+        <!-- DOCBOOK -->
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><img class="img-responsive" src="img/docbook.jpg" alt="DocBook Website Image"></p>
+        </div>
+        <div class="col-lg-3">
+            <p>DocBook</p>
+            <p><more>DocBook is a free service that allows patients to find a nearby doctor or dentist, see their real-time availability, and instantly book an appointment.
+                To medical professionals (doctors and dentists) who appreciate efficiency and who want to focus on their medical work, DocBook offers an easy and reliable way to partly offload appointment booking activities to the DocBook online channel and to drive patient traffic.<br/><br/>
+                <sm><i class="fa fa-tag"></i> complete</sm></more>
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><img class="img-responsive" src="img/mobilesiteindex.png" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+            <p>Mobile Career Index</p>
+            <p><more>The application provides users the ability to analyze the mobile readiness of their respective career sites. The application has different rules and the corresponding standards to give a detailed report regarding the best practices followed or not followed by the user while implementing their career website.<br/><br/>
+                <sm><i class="fa fa-tag"></i> back-end</sm></more>
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><img class="img-responsive" src="img/port02.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+            <p>Human Resource Management System</p>
+            <p><more>HRMS provides the ability to maintain attendance of all employees and in addition to it also facilitates employees to apply for leave, maintain their leave balance, automatic email notification after applying and approving.<br/><br/>
+                <sm><i class="fa fa-tag"></i> complete</sm></more>
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><img class="img-responsive" src="img/fss.JPG" alt="" width="555"></p>
+        </div>
+        <div class="col-lg-3">
+            <p>Fast Strike Sports</p>
+            <p><more>Fast Strike Sports creates fantasy sports games for state lotteries in the United States. This application allows users to play online with their mobile phone, tablet pc or desktop against their friends. One can also play and invite their facebook friends.<br/><br/>
+                <sm><i class="fa fa-tag"></i> complete</sm></more>
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-lg-offset-3">
+            <p><img class="img-responsive" src="img/port01.jpg" alt=""></p>
+        </div>
+        <div class="col-lg-3">
+            <p>IndiaCast Media Distribution Protocol</p>
+            <p><more>The application enables one of the largest digital marketing provider to automatically update the customized usage policies for various channels and TV shows. The application creates, edits and processes the records and updates the FTP servers provided by Youtube using XML feeds to timely modify the usage policies. The application has a role-based security enabling a particular role to do only permitted activities.<br/><br/>
+                <sm><i class="fa fa-tag"></i> back-end</sm></more>
+            </p>
+        </div>
+    </div><!--/.row -->
+    <br>
+    <br>
+</div><!--/.container -->
+
+<section id="contact" name="contact"></section>
+<!--FOOTER DESCRIPTION -->
+<div id="footwrap">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>CONTACT</h5>
+            </div>
+            <div class="col-lg-6">
+                <p><t>Email</t><br/>
+                    <a href="mailto:puneetbehl@yahoo.com">puneetbehl@yahoo.com</a> <br/>
+                </p>
+                <p><t>Adress</t><br/>
+                    252, Jawahar Colony, N.I.T <br/>
+                    Postal 121005 <br/>
+                    Faridabad, India. <br/>
+                </p>
+                <p><t>Phone</t><br/>
+                    +91-997106445 <br/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><sm>SOCIAL LINKS</sm></p>
+                <ul class="social-network social-circle">
+                    <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="https://www.facebook.com/puneetstore" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/puneetbhl" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/102688776692809350794/about" target="_blank" class="icoGoogle" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="http://in.linkedin.com/in/puneetbhl" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!--/.row -->
+    </div><!--/.container -->
+</div><!--/ #footer -->
+
+<div id="c">
+    <div class="container">
+        <p>Created by <a href="http://www.intelligrape.com">IntelliGrape</a></p>
+
+    </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
