@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a061d73-d461-46f6-9986-ba3f0b6a004e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/snapshots/SampleTemplate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/starter-template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TwitterBootStrap3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +31,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="549" selection-end="552" vertical-scroll-proportion="0.27643785" vertical-offset="91" max-vertical-offset="810">
+            <state line="36" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.94434136" vertical-offset="31" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -47,6 +50,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -270,9 +274,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="8" selection-end="8" vertical-scroll-proportion="0.026041666" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="549" selection-end="552" vertical-scroll-proportion="0.27643785" vertical-offset="91" max-vertical-offset="810">
+        <state line="36" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.94434136" vertical-offset="31" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
