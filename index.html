@@ -8,44 +8,95 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css"/>
     <link rel="stylesheet" href="css/docs.min.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <header class="navbar navbar-static-top bs-docs-nav">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="navbar-header"><a href="/" class="navbar-brand">Brand Name</a></div>
+<header class="navbar navbar-static-top bs-docs-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-header"><a href="/" class="navbar-brand">Brand Name</a></div>
 
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse" type="button">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-collapse" type="button">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse col-md-8 col-xs-9" id="top-nav">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- End Nav -->
+    </div>
+    <!-- End container -->
+</header>
+
+<!-- End header -->
+
+<!-- Page content of course! -->
+<div class="bs-docs-masthead" id="content" role="main">
+    <div class="container">
+
+        <p class="lead">Welcome! This is sample landing page</p>
+
+    </div>
+</div>
+
+<div class="bs-docs-featurette">
+    <div class="container">
+        <h2 class="bs-docs-featurette-title" style="text-transform: inherit;">Learning is part of IntelliGrape
+            ethos</h2>
+
+        <p class="lead">By providing training and development programmes, on-the-job learning, coaching and feedback, we
+            make sure that everyone who works with us has the resources they need to learn more and build their
+            careers.</p>
+
+        <div class="divider"></div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/logo/grails-logo.png" alt="Groovy & Grails Logo" class="img-responsive">
+
+                <h3>Groovy & Grails.</h3>
+
+                <p>We are one of the largest team of Grails developers in the world. We have been working on Groovy &
+                    Grails since early 2008 and have developed more than 50 live applications on Grails.</p>
             </div>
 
-            <nav class="collapse navbar-collapse bs-navbar-collapse col-md-8 col-xs-9" id="top-nav">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <!-- End Nav -->
+            <div class="col-sm-3">
+                <img src="images/logo/nodejs-logo.png" alt="Node JS Logo" class="img-responsive" style="height: 115px;">
+
+                <h3>Node JS</h3>
+
+                <p>We are one of the earliest adopters of Node.js and have gained extensive experience in delivering
+                    rich, high performance and scalable web applications using Node.js.</p>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="images/logo/adobe-cq.png" alt="Adobe CQ5 Logo" class="img-responsive">
+
+                <h3>Adobe CQ5</h3>
+
+                <p>We help our clients with custom development, multi-channel content delivery and large-scale data
+                    migrations on Adobe CQ.</p>
+            </div>
+
+            <div class="col-sm-3">
+                <img src="images/logo/aws-logo.png" alt="AWS Logo" class="img-responsive">
+
+                <h3>AWS</h3>
+
+                <p>We provide consulting, implementation and managed services on Amazon Web Services. We help and manage
+                    cloud infrastructure for some of the Fortune 500 companies as well as SMBs.</p>
+            </div>
         </div>
-        <!-- End container -->
-    </header>
-
-    <!-- End header -->
-
-    <!-- Page content of course! -->
-    <main class="bs-docs-masthead" id="content" role="main">
-        <div class="container">
-
-            <p class="lead">Welcome! This is sample landing page</p>
-
-        </div>
-    </main>
-
+    </div>
+</div>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
