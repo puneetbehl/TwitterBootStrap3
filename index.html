@@ -100,8 +100,54 @@
         </div>
     </div>
 </div>
+
+<div class="bs-docs-featurette">
+    <div class="container">
+        <h2 class="bs-docs-featurette-title">Built with Bootstrap.</h2>
+        <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="#">collection of examples</a> or by exploring some of our favorites.</p>
+
+        <div class="divider"></div>
+
+        <div id="owl-example" class="row bs-docs-featured-sites owl-carousel">
+
+            <div>
+                <a href="#" title="Little">
+                    <img src="http://expo.getbootstrap.com/screenshots/little.jpg" alt="Little" class="img-responsive">
+                </a>
+            </div>
+
+            <div>
+                <a href="#" title="Engine Yard">
+                    <img src="http://expo.getbootstrap.com/screenshots/engine-yard.jpg" alt="Engine Yard" class="img-responsive">
+                </a>
+            </div>
+
+            <div>
+                <a href="#" title="Webflow">
+                    <img src="http://expo.getbootstrap.com/screenshots/webflow.jpg" alt="Webflow" class="img-responsive">
+                </a>
+            </div>
+
+            <div>
+                <a href="#" title="Sentry">
+                    <img src="http://expo.getbootstrap.com/screenshots/sentry.jpg" alt="Sentry" class="img-responsive">
+                </a>
+            </div>
+        </div>
+
+        <hr class="half-rule">
+
+        <p class="lead">We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
+        <a href="http://expo.getbootstrap.com" class="btn btn-outline btn-lg">Explore the Expo</a>
+    </div>
+</div>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#owl-example").owlCarousel({items:2});
+    });
+</script>
 </body>
 </html>
